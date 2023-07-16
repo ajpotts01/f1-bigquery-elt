@@ -1,0 +1,52 @@
+{
+	"sourceFormat": "NEWLINE_DELIMITED_JSON",
+	"sourceUris": [
+		"gs://ajp-industries-f1-data-lake/raw/pit_stops.json"
+	],
+	"schema": {
+		"fields": [
+			{
+				"description": "Race ID",
+				"mode": "REQUIRED",
+				"name": "raceId",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Driver ID",
+				"mode": "NULLABLE",
+				"name": "driverId",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Pit stop #",
+				"mode": "NULLABLE",
+				"name": "stop",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Lap #",
+				"mode": "NULLABLE",
+				"name": "lap",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Time on lap",
+				"mode": "NULLABLE",
+				"name": "time",
+				"type": "STRING"
+			},
+			{
+				"description": "Pit stop duration",
+				"mode": "NULLABLE",
+				"name": "duration",
+				"type": "STRING"
+			},
+			{
+				"description": "Pit stop duration in milliseconds",
+				"mode": "NULLABLE",
+				"name": "milliseconds",
+				"type": "INTEGER"
+			}
+		]
+	}
+}
