@@ -1,0 +1,40 @@
+{
+	"sourceFormat": "NEWLINE_DELIMITED_JSON",
+	"sourceUris": [
+		"gs://ajp-industries-f1-data-lake/raw/constructors.json"
+	],
+	"schema": {
+		"fields": [
+			{
+				"description": "Constructor ID",
+				"mode": "REQUIRED",
+				"name": "constructorId",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Reference code for this constructor",
+				"mode": "NULLABLE",
+				"name": "constructorRef",
+				"type": "STRING"
+			},
+			{
+				"description": "Constructor name",
+				"mode": "NULLABLE",
+				"name": "name",
+				"type": "STRING"
+			},
+			{
+				"description": "This constructor's nationality",
+				"mode": "NULLABLE",
+				"name": "nationality",
+				"type": "STRING"
+			},
+			{
+				"description": "Wikipedia URL for this constructor",
+				"mode": "NULLABLE",
+				"name": "url",
+				"type": "STRING"
+			}
+		]
+	}
+}
