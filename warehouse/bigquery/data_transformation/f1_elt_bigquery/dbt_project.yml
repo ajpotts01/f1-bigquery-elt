@@ -32,6 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   f1_elt_bigquery:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    processed:
+      materialized: table
+      +schema: f1_processed
+    presentation:
+      materialized: view
+      +schema: f1_presentation
