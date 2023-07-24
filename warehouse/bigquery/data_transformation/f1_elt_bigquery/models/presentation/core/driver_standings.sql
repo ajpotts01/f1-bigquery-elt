@@ -5,7 +5,7 @@ WITH results AS (
         , RR.driver_nationality
         , RR.team
         , SUM(RR.points) AS total_points
-        , COUNT(CASE WHEN RR.position = '1' THEN 1 END) AS wins
+        , COUNT(CASE WHEN RR.position = 1 THEN 1 END) AS wins
     FROM
         {{ ref('race_results') }} RR
     GROUP BY

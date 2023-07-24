@@ -18,6 +18,10 @@ SELECT
     , RS.time AS race_time
     , RS.points
     , RS.position
+    , CASE
+        WHEN RS.position <= 10 THEN 11 - RS.position -- TODO: fix data types
+        ELSE 0
+       END AS normalized_points -- to allow comparison across eras of F1
     , CURRENT_DATETIME() AS meta_created_time
 FROM
     {{ ref('results') }} RS
