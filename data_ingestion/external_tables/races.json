@@ -1,0 +1,62 @@
+{
+	"sourceFormat": "CSV",
+	"csvOptions": {
+		"encoding": "UTF-8",
+		"skipLeadingRows": 1
+	},
+	"sourceUris": [
+		"gs://ajp-industries-f1-data-lake/raw/races.csv"
+	],
+	"schema": {
+		"fields": [
+			{
+				"description": "Race ID",
+				"mode": "REQUIRED",
+				"name": "raceId",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Year of the race",
+				"mode": "NULLABLE",
+				"name": "year",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Round of the F1 competition year",
+				"mode": "NULLABLE",
+				"name": "round",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Circuit ID",
+				"mode": "NULLABLE",
+				"name": "circuitId",
+				"type": "INTEGER"
+			},
+			{
+				"description": "Name of the race",
+				"mode": "NULLABLE",
+				"name": "name",
+				"type": "STRING"
+			},
+			{
+				"description": "Date the race was held",
+				"mode": "NULLABLE",
+				"name": "date",
+				"type": "DATE"
+			},
+			{
+				"description": "Time the race started",
+				"mode": "NULLABLE",
+				"name": "time",
+				"type": "STRING"
+			},
+			{
+				"description": "Wikipedia URL for this race",
+				"mode": "NULLABLE",
+				"name": "url",
+				"type": "STRING"
+			}
+		]
+	}
+}
