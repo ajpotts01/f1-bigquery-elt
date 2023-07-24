@@ -24,4 +24,32 @@ bq.cmd --location=australia-southeast1 mk \
 bq.cmd --location=australia-southeast1 mk --table \
    --external_table_definition="../data_ingestion/external_tables/circuits.json" \
    ajp-industries-f1-elt:f1_landing.circuits
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/constructors.json" \
+   ajp-industries-f1-elt:f1_landing.constructors
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/drivers.json" \
+   ajp-industries-f1-elt:f1_landing.drivers
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/lap_times.json" \
+   ajp-industries-f1-elt:f1_landing.lap_times
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/pit_stops.json" \
+   ajp-industries-f1-elt:f1_landing.pit_stops
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/qualifying.json" \
+   ajp-industries-f1-elt:f1_landing.qualifying
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/races.json" \
+   ajp-industries-f1-elt:f1_landing.races
+
+bq.cmd --location=australia-southeast1 mk --table \
+   --external_table_definition="../data_ingestion/external_tables/results.json" \
+   ajp-industries-f1-elt:f1_landing.results
    
