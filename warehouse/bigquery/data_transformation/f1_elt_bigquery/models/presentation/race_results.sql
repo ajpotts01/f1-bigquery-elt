@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
 SELECT
     RC.race_year
     , RC.name AS race_name
@@ -11,6 +17,7 @@ SELECT
     , RS.fastest_lap
     , RS.time AS race_time
     , RS.points
+    , RS.position
     , CURRENT_DATETIME() AS meta_created_time
 FROM
     {{ ref('results') }} RS
