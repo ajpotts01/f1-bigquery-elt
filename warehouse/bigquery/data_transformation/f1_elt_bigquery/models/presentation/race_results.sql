@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-
 SELECT
     RC.race_year
     , RC.name AS race_name
