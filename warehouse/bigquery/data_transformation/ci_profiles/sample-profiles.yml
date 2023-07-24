@@ -1,0 +1,31 @@
+f1_elt_bigquery:
+  target: local
+  outputs:
+    local:
+      type: bigquery
+      method: oauth
+      project: ENTER_YOUR_GCP_PROJECT_HERE
+      dataset: ENTER_YOUR_DATASET_HERE
+      threads: 1
+      timeout_seconds: 300
+      location: australia-southeast1
+      priority: interactive
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var("BQ_PROJECT") }}"
+      dataset: "{{ env_var("BQ_DATASET") }}"
+      threads: 1
+      timeout_seconds: 300
+      location: australia-southeast1
+      priority: interactive
+    dev-sa-oauth:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var("BQ_PROJECT") }}"
+      dataset: "{{ env_var("BQ_DATASET") }}"
+      impersonate_service_account: "{{ env_var('BQ_SERVICE_ACCOUNT') }}"
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive

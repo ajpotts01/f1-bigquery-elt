@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: f1_landing
+    database: |
+      {{ env_var("BQ_PROJECT") }}
+    schema: f1_landing
+    tables:
+      - name: circuits
+      - name: constructors
+      - name: drivers
+      - name: lap_times
+      - name: pit_stops
+      - name: qualifying
+      - name: races
+      - name: results
