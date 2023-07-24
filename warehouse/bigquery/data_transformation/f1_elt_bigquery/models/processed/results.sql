@@ -10,23 +10,23 @@
 }}
 
 SELECT
-    resultId AS result_id
-    , raceId AS race_id
-    , driverId AS driver_id
-    , constructorId AS constructor_id    
-    , number
-    , grid
-    , position
-    , positionText AS position_text
-    , positionOrder AS position_order
-    , rank
-    , points
-    , laps
-    , time
-    , milliseconds
-    , fastestLap AS fastest_lap
-    , fastestLapTime AS fastest_lap_time
-    , fastestLapSpeed AS fastest_lap_seed
+    R.resultId AS result_id
+    , R.raceId AS race_id
+    , R.driverId AS driver_id
+    , R.constructorId AS constructor_id    
+    , R.number
+    , R.grid
+    , CAST(NULLIF(R.position, '\\N') AS INT) AS position
+    , R.positionText AS position_text
+    , R.positionOrder AS position_order
+    , R.rank
+    , R.points
+    , R.laps
+    , R.time
+    , R.milliseconds
+    , R.fastestLap AS fastest_lap
+    , R.fastestLapTime AS fastest_lap_time
+    , R.fastestLapSpeed AS fastest_lap_seed
     , CURRENT_DATETIME() AS meta_ingestion_date
 FROM
-    {{ source('f1_landing', 'results') }}
+    {{ source('f1_landing', 'results') }} R
