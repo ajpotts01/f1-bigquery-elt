@@ -1,72 +1,72 @@
 {
-	"sourceFormat": "NEWLINE_DELIMITED_JSON",
-	"sourceUris": [
-		"gs://ajp-industries-f1-data-lake/raw/drivers.json"
-	],
-	"schema": {
-		"fields": [
-			{
-				"description": "Driver ID",
-				"mode": "REQUIRED",
-				"name": "driverId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Reference code for this driver",
-				"mode": "NULLABLE",
-				"name": "driverRef",
-				"type": "STRING"
-			},
-			{
-				"description": "Driver's car number",
-				"mode": "NULLABLE",
-				"name": "number",
-				"type": "STRING"
-			},
-			{
-				"description": "3-letter driver name code",
-				"mode": "NULLABLE",
-				"name": "code",
-				"type": "STRING"
-			},
-			{
-				"description": "Driver's full name",
-				"fields": [
-					{
-						"description": "Driver's first name",
-						"mode": "NULLABLE",
-						"name": "forename",
-						"type": "STRING"
-					},
-					{
-						"description": "Driver's surname",
-						"mode": "NULLABLE",
-						"name": "surname",
-						"type": "STRING"
-					}
-				],
-				"mode": "NULLABLE",
-				"name": "name",
-				"type": "RECORD"
-			},
-			{
-				"description": "Driver's date of birth",
-				"mode": "NULLABLE",
-				"name": "dob",
-				"type": "DATE"
-			},
-			{
-				"description": "Driver's nationality",
-				"mode": "NULLABLE",
-				"name": "nationality",
-				"type": "STRING"
-			},
-			{
-				"description": "Wikipedia article for this driver",
-				"mode": "NULLABLE",
-				"name": "url",
-				"type": "STRING"
-			}
-		]
-	}
+  "sourceFormat": "NEWLINE_DELIMITED_JSON",
+  "sourceUris": [
+    "gs://ajp-industries-f1-data-lake/raw/drivers/*"
+  ],
+  "schema": {
+    "fields": [
+      {
+        "description": "Driver ID",
+        "mode": "REQUIRED",
+        "name": "driverId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Reference code for this driver",
+        "mode": "NULLABLE",
+        "name": "driverRef",
+        "type": "STRING"
+      },
+      {
+        "description": "Driver's car number",
+        "mode": "NULLABLE",
+        "name": "number",
+        "type": "STRING"
+      },
+      {
+        "description": "3-letter driver name code",
+        "mode": "NULLABLE",
+        "name": "code",
+        "type": "STRING"
+      },
+      {
+        "description": "Driver's full name",
+        "fields": [
+          {
+            "description": "Driver's first name",
+            "mode": "NULLABLE",
+            "name": "forename",
+            "type": "STRING"
+          },
+          {
+            "description": "Driver's surname",
+            "mode": "NULLABLE",
+            "name": "surname",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "RECORD"
+      },
+      {
+        "description": "Driver's date of birth",
+        "mode": "NULLABLE",
+        "name": "dob",
+        "type": "DATE"
+      },
+      {
+        "description": "Driver's nationality",
+        "mode": "NULLABLE",
+        "name": "nationality",
+        "type": "STRING"
+      },
+      {
+        "description": "Wikipedia article for this driver",
+        "mode": "NULLABLE",
+        "name": "url",
+        "type": "STRING"
+      }
+    ]
+  }
 }

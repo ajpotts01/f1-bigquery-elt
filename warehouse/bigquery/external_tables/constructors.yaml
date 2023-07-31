@@ -1,0 +1,25 @@
+sourceFormat: NEWLINE_DELIMITED_JSON
+sourceUris:
+  - gs://ajp-industries-f1-data-lake/raw/constructors/*
+schema:
+  fields:
+    - name: constructorId
+      type: INT64
+      mode: REQUIRED
+      description: "Constructor ID"
+    - name: constructorRef
+      description: "Reference code for this constructor"
+      mode: NULLABLE
+      type: STRING
+    - name: name
+      mode: "NULLABLE"
+      description: "Constructor name"      
+      type: "STRING"
+    - description: "This constructor's nationality"
+      mode: "NULLABLE"
+      name: "nationality"
+      type: "STRING"
+    - description: "Wikipedia URL for this constructor"
+      mode: "NULLABLE"
+      name: "url"
+      type: "STRING"

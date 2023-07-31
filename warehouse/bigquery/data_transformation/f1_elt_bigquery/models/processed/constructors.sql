@@ -5,10 +5,9 @@
 }}
 
 SELECT
-    constructorId AS constructor_id,
-    constructorRef AS constructor_ref,
-    name,
-    nationality,
-    CURRENT_DATETIME() AS meta_ingestion_date
+    constructorId AS constructor_id
+    , constructorRef AS constructor_ref
+    , name
+    , nationality
 FROM
     {{ source('f1_landing', 'constructors') }}

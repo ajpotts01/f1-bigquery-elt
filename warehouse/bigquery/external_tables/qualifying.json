@@ -1,64 +1,64 @@
 {
-	"sourceFormat": "NEWLINE_DELIMITED_JSON",
-	"sourceUris": [
-		"gs://ajp-industries-f1-data-lake/raw/qualifying/qualifying_*.json"
-	],
-	"schema": {
-		"fields": [
-			{
-				"description": "Qualification ID",
-				"mode": "REQUIRED",
-				"name": "qualifyId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Race ID",
-				"mode": "NULLABLE",
-				"name": "raceId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Driver ID",
-				"mode": "NULLABLE",
-				"name": "driverId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Constructor ID",
-				"mode": "NULLABLE",
-				"name": "constructorId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Car number",
-				"mode": "NULLABLE",
-				"name": "number",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Qualifying position",
-				"mode": "NULLABLE",
-				"name": "position",
-				"type": "INTEGER"
-			},
-			{
-				"description": "First qualifying lap time",
-				"mode": "NULLABLE",
-				"name": "q1",
-				"type": "STRING"
-			},
-			{
-				"description": "Second qualifying lap time",
-				"mode": "NULLABLE",
-				"name": "q2",
-				"type": "STRING"
-			},
-			{
-				"description": "Third qualifying lap time",
-				"mode": "NULLABLE",
-				"name": "q3",
-				"type": "STRING"
-			}
-		]
-	}
+  "sourceFormat": "NEWLINE_DELIMITED_JSON",
+  "sourceUris": [
+    "gs://ajp-industries-f1-data-lake/raw/qualifying/*.json"
+  ],
+  "schema": {
+    "fields": [
+      {
+        "description": "Qualification ID",
+        "mode": "REQUIRED",
+        "name": "qualifyId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Race ID",
+        "mode": "NULLABLE",
+        "name": "raceId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Driver ID",
+        "mode": "NULLABLE",
+        "name": "driverId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Constructor ID",
+        "mode": "NULLABLE",
+        "name": "constructorId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Car number",
+        "mode": "NULLABLE",
+        "name": "number",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Qualifying position",
+        "mode": "NULLABLE",
+        "name": "position",
+        "type": "INTEGER"
+      },
+      {
+        "description": "First qualifying lap time",
+        "mode": "NULLABLE",
+        "name": "q1",
+        "type": "STRING"
+      },
+      {
+        "description": "Second qualifying lap time",
+        "mode": "NULLABLE",
+        "name": "q2",
+        "type": "STRING"
+      },
+      {
+        "description": "Third qualifying lap time",
+        "mode": "NULLABLE",
+        "name": "q3",
+        "type": "STRING"
+      }
+    ]
+  }
 }

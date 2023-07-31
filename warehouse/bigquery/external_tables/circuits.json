@@ -1,68 +1,68 @@
 {
-	"sourceFormat": "CSV",
-	"csvOptions": {
-		"encoding": "UTF-8",
-		"skipLeadingRows": 1
-	},
-	"sourceUris": [
-		"gs://ajp-industries-f1-data-lake/raw/circuits.csv"
-	],
-	"schema": {
-		"fields": [
-			{
-				"name": "circuitId",
-				"type": "INT64",
-				"mode": "REQUIRED",
-				"description": "ID for this circuit"
-			},
-			{
-				"name": "circuitRef",
-				"type": "STRING",
-				"mode": "NULLABLE",
-				"description": "Reference code for this circuit"
-			},
-			{
-				"name": "name",
-				"type": "STRING",
-				"mode": "NULLABLE",
-				"description": "Name of the circuit"
-			},
-			{
-				"name": "location",
-				"type": "STRING",
-				"mode": "NULLABLE",
-				"description": "Location of the circuit (city etc.)"
-			},
-			{
-				"name": "country",
-				"type": "STRING",
-				"mode": "NULLABLE",
-				"description": "Country this circuit is in"
-			},
-			{
-				"name": "lat",
-				"type": "FLOAT64",
-				"mode": "NULLABLE",
-				"description": "Latitude co-ordinates"
-			},
-			{
-				"name": "lng",
-				"type": "FLOAT64",
-				"mode": "NULLABLE",
-				"description": "Longitude co-ordinates"
-			},
-			{
-				"name": "alt",
-				"type": "STRING",
-				"mode": "NULLABLE",
-				"description": "Altitude of the circuit"
-			},
-			{
-				"name": "url",
-				"type": "STRING",
-				"mode": "NULLABLE",
-				"description": "Circuit URL"
-			}
-		]
-	}
+  "sourceFormat": "CSV",
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "skipLeadingRows": 1
+  },
+  "sourceUris": [
+    "gs://ajp-industries-f1-data-lake/raw/circuits/*"
+  ],
+  "schema": {
+    "fields": [
+      {
+        "name": "circuitId",
+        "type": "INT64",
+        "mode": "REQUIRED",
+        "description": "ID for this circuit"
+      },
+      {
+        "name": "circuitRef",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Reference code for this circuit"
+      },
+      {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Name of the circuit"
+      },
+      {
+        "name": "location",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Location of the circuit (city etc.)"
+      },
+      {
+        "name": "country",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Country this circuit is in"
+      },
+      {
+        "name": "lat",
+        "type": "FLOAT64",
+        "mode": "NULLABLE",
+        "description": "Latitude co-ordinates"
+      },
+      {
+        "name": "lng",
+        "type": "FLOAT64",
+        "mode": "NULLABLE",
+        "description": "Longitude co-ordinates"
+      },
+      {
+        "name": "alt",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Altitude of the circuit"
+      },
+      {
+        "name": "url",
+        "type": "STRING",
+        "mode": "NULLABLE",
+        "description": "Circuit URL"
+      }
+    ]
+  }
 }

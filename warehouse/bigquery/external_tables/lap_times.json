@@ -1,50 +1,50 @@
 {
-	"sourceFormat": "CSV",
-	"csvOptions": {
-		"encoding": "UTF-8",
-		"skipLeadingRows": 1
-	},	
-	"sourceUris": [
-		"gs://ajp-industries-f1-data-lake/raw/lap_times/lap_times_split*.csv"
-	],
-	"schema": {
-		"fields": [
-			{
-				"description": "ID for this race",
-				"mode": "REQUIRED",
-				"name": "raceId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "ID for this driver",
-				"mode": "NULLABLE",
-				"name": "driverId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Lap number",
-				"mode": "NULLABLE",
-				"name": "lap",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Position on this lap",
-				"mode": "NULLABLE",
-				"name": "position",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Lap time",
-				"mode": "NULLABLE",
-				"name": "time",
-				"type": "STRING"
-			},
-			{
-				"description": "Lap time in milliseconds\n",
-				"mode": "NULLABLE",
-				"name": "milliseconds",
-				"type": "INTEGER"
-			}
-		]
-	}
+  "sourceFormat": "CSV",
+  "csvOptions": {
+    "encoding": "UTF-8",
+    "skipLeadingRows": 1
+  },
+  "sourceUris": [
+    "gs://ajp-industries-f1-data-lake/raw/lap_times/*"
+  ],
+  "schema": {
+    "fields": [
+      {
+        "description": "ID for this race",
+        "mode": "REQUIRED",
+        "name": "raceId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "ID for this driver",
+        "mode": "NULLABLE",
+        "name": "driverId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Lap number",
+        "mode": "NULLABLE",
+        "name": "lap",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Position on this lap",
+        "mode": "NULLABLE",
+        "name": "position",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Lap time",
+        "mode": "NULLABLE",
+        "name": "time",
+        "type": "STRING"
+      },
+      {
+        "description": "Lap time in milliseconds\n",
+        "mode": "NULLABLE",
+        "name": "milliseconds",
+        "type": "INTEGER"
+      }
+    ]
+  }
 }

@@ -1,118 +1,118 @@
 {
-	"sourceFormat": "NEWLINE_DELIMITED_JSON",
-	"sourceUris": [
-		"gs://ajp-industries-f1-data-lake/raw/results.json"
-	],
-	"schema": {
-		"fields": [
-			{
-				"description": "Result ID",
-				"mode": "REQUIRED",
-				"name": "resultId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Race ID",
-				"mode": "NULLABLE",
-				"name": "raceId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Driver ID",
-				"mode": "NULLABLE",
-				"name": "driverId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Constructor ID",
-				"mode": "NULLABLE",
-				"name": "constructorId",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Car number?",
-				"mode": "NULLABLE",
-				"name": "number",
-				"type": "STRING"
-			},
-			{
-				"description": "Starting position",
-				"mode": "NULLABLE",
-				"name": "grid",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Race position - for top 10 only",
-				"mode": "NULLABLE",
-				"name": "position",
-				"type": "STRING"
-			},
-			{
-				"description": "Position text",
-				"mode": "NULLABLE",
-				"name": "positionText",
-				"type": "STRING"
-			},
-			{
-				"description": "Position order - for full list of drivers",
-				"mode": "NULLABLE",
-				"name": "positionOrder",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Points for this race",
-				"mode": "NULLABLE",
-				"name": "points",
-				"type": "FLOAT"
-			},
-			{
-				"description": "Number of laps completed",
-				"mode": "NULLABLE",
-				"name": "laps",
-				"type": "INTEGER"
-			},
-			{
-				"description": "Time to complete",
-				"mode": "NULLABLE",
-				"name": "time",
-				"type": "STRING"
-			},
-			{
-				"description": "Time in milliseconds",
-				"mode": "NULLABLE",
-				"name": "milliseconds",
-				"type": "STRING"
-			},
-			{
-				"description": "Fastest lap",
-				"mode": "NULLABLE",
-				"name": "fastestLap",
-				"type": "STRING"
-			},
-			{
-				"description": "Ranking on the ladder",
-				"mode": "NULLABLE",
-				"name": "rank",
-				"type": "STRING"
-			},
-			{
-				"description": "Fastest lap time",
-				"mode": "NULLABLE",
-				"name": "fastestLapTime",
-				"type": "STRING"
-			},
-			{
-				"description": "Fastest lap speed",
-				"mode": "NULLABLE",
-				"name": "fastestLapSpeed",
-				"type": "STRING"
-			},
-			{
-				"description": "Result status ID",
-				"mode": "NULLABLE",
-				"name": "statusId",
-				"type": "STRING"
-			}
-		]
-	}
+  "sourceFormat": "NEWLINE_DELIMITED_JSON",
+  "sourceUris": [
+    "gs://ajp-industries-f1-data-lake/raw/results/*"
+  ],
+  "schema": {
+    "fields": [
+      {
+        "description": "Result ID",
+        "mode": "REQUIRED",
+        "name": "resultId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Race ID",
+        "mode": "NULLABLE",
+        "name": "raceId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Driver ID",
+        "mode": "NULLABLE",
+        "name": "driverId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Constructor ID",
+        "mode": "NULLABLE",
+        "name": "constructorId",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Car number?",
+        "mode": "NULLABLE",
+        "name": "number",
+        "type": "STRING"
+      },
+      {
+        "description": "Starting position",
+        "mode": "NULLABLE",
+        "name": "grid",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Race position - for top 10 only",
+        "mode": "NULLABLE",
+        "name": "position",
+        "type": "STRING"
+      },
+      {
+        "description": "Position text",
+        "mode": "NULLABLE",
+        "name": "positionText",
+        "type": "STRING"
+      },
+      {
+        "description": "Position order - for full list of drivers",
+        "mode": "NULLABLE",
+        "name": "positionOrder",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Points for this race",
+        "mode": "NULLABLE",
+        "name": "points",
+        "type": "FLOAT"
+      },
+      {
+        "description": "Number of laps completed",
+        "mode": "NULLABLE",
+        "name": "laps",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Time to complete",
+        "mode": "NULLABLE",
+        "name": "time",
+        "type": "STRING"
+      },
+      {
+        "description": "Time in milliseconds",
+        "mode": "NULLABLE",
+        "name": "milliseconds",
+        "type": "STRING"
+      },
+      {
+        "description": "Fastest lap",
+        "mode": "NULLABLE",
+        "name": "fastestLap",
+        "type": "STRING"
+      },
+      {
+        "description": "Ranking on the ladder",
+        "mode": "NULLABLE",
+        "name": "rank",
+        "type": "STRING"
+      },
+      {
+        "description": "Fastest lap time",
+        "mode": "NULLABLE",
+        "name": "fastestLapTime",
+        "type": "STRING"
+      },
+      {
+        "description": "Fastest lap speed",
+        "mode": "NULLABLE",
+        "name": "fastestLapSpeed",
+        "type": "STRING"
+      },
+      {
+        "description": "Result status ID",
+        "mode": "NULLABLE",
+        "name": "statusId",
+        "type": "STRING"
+      }
+    ]
+  }
 }
